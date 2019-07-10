@@ -1,0 +1,28 @@
+{% extends "mobile/base.html" %}
+
+{% block content %}
+<h1>EMS</h1>
+<p>เลขพัสดุของคุณ</p>
+{% endblock content %}
+
+{% block content_product %}
+	<div class="container">         
+	<h2>EMS</h2>
+	  <table class="table table-hover">
+	    <thead>
+			<tr>
+				<td><strong>ชื่อ</strong></td>
+				<td><strong>เลข EMS</strong></td>
+			</tr>
+	    </thead>
+	    <tbody>
+	    	{% for ems in emslist %}
+	    	<tr>
+	    		<td>{{ ems.ems_name }}</td>
+	    		<td>{{ ems.ems_number }}</td>
+	    	</tr>
+	    	{% endfor %}
+	    </tbody>
+	  </table>
+	</div>
+{% endblock content_product %}

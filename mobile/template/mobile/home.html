@@ -10,8 +10,10 @@
 	{% for p in phonelist %}
 	  <h2> {{ p.product_name }} </h2>
       
-      <img src="{% static 'mobile/Redmi-7-2-696x435.jpg' %}" style="width: 100%" />
-      
+      {% if p.photo %}
+      	<img src="{{ p.photo.url }}" style="width: 100%" />
+      {% endif %}
+
       <p> {{ p.product_desc }} </p>
       <br>
     {% endfor %}

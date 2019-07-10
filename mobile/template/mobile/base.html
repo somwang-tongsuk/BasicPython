@@ -43,6 +43,10 @@
        <li class="nav-item">
         <a class="nav-link" href="#">Contact Us</a>
       </li>     
+       <li class="nav-item">
+        <a class="nav-link" href="{% url 'mobile-emss' %}">EMS</a>
+      </li>   
+
     </ul>
   </div>  
 </nav>
@@ -78,13 +82,6 @@
     <div class="col-sm-8">
       {% block content_product %}
       {% endblock content_product %}   
-
-
-      <h2>Bestseller</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <img src="{% static 'mobile/mate20.jpg' %}" style="width: 100%" />
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
 </div>

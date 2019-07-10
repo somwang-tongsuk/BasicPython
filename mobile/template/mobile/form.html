@@ -1,0 +1,17 @@
+{% extends "mobile/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h1>QuestionsForm</h1>
+<p>Form</p>
+{% endblock content %}
+
+{% block content_product %}
+<form method="post">
+	{% csrf_token %}
+	{{ forms | crispy }}
+	<button type="submit" >Submit</button>
+
+</form>
+{{msg}}
+{% endblock content_product %}
