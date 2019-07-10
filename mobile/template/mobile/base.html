@@ -76,12 +76,10 @@
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
-      <h2>IPhoe</h2>
-      <h5>New Item, Dec 7, 2017</h5>
-      <img src="{% static 'mobile/Redmi-7-2-696x435.jpg' %}" style="width: 100%" />
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
+      {% block content_product %}
+      {% endblock content_product %}   
+
+
       <h2>Bestseller</h2>
       <h5>Title description, Sep 2, 2017</h5>
       <img src="{% static 'mobile/mate20.jpg' %}" style="width: 100%" />

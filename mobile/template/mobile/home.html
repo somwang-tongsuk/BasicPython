@@ -1,6 +1,18 @@
 {% extends "mobile/base.html" %}
+{% load static %}
 
 {% block content %}
 <h1>This is a Home Page</h1>
 <p>we have 1000 mobiles for sales</p>
 {% endblock content %}
+
+{% block content_product %}
+	{% for p in phonelist %}
+	  <h2> {{ p.product_name }} </h2>
+      
+      <img src="{% static 'mobile/Redmi-7-2-696x435.jpg' %}" style="width: 100%" />
+      
+      <p> {{ p.product_desc }} </p>
+      <br>
+    {% endfor %}
+{% endblock content_product %}
