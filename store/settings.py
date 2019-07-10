@@ -25,7 +25,7 @@ SECRET_KEY = '#!$^--+rsa2c!l0p=x(mbslzcx@tr*#r1+-i$ub$1ju+bd(lf8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['python-basic-demo.herokuapp.com']
 
 
 # Application definition
