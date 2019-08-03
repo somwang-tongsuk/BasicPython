@@ -15,7 +15,8 @@ import os
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
@@ -26,7 +27,7 @@ MEDIA_URL = '/media/'
 SECRET_KEY = '#!$^--+rsa2c!l0p=x(mbslzcx@tr*#r1+-i$ub$1ju+bd(lf8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', '.herokuapp.com', '.ngrok.io']
 # Application definition
