@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'store.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('DB_NAME', 'basicpython'),
-        'USER': os.environ.get('DB_USER', 'postgres'),
-        'PASSWORD': os.environ.get('DB_PASS', 'admin'),
-        'HOST': 'localhost',
+        'NAME': os.environ.get('DB_NAME', 'des6oev9bvjug6'),
+        'USER': os.environ.get('DB_USER', 'itharvnhbfcpqf'),
+        'PASSWORD': os.environ.get('DB_PASS', '5018958352dc0e61e1a3e0db929d265edbdc335e1d8869e64909ac845cc64614'),
+        'HOST': 'ec2-174-129-227-80.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -130,4 +130,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-#django_heroku.settings(locals())   
+#django_heroku.settings(locals()) 
