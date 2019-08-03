@@ -27,7 +27,7 @@ MEDIA_URL = '/media/'
 SECRET_KEY = '#!$^--+rsa2c!l0p=x(mbslzcx@tr*#r1+-i$ub$1ju+bd(lf8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', '.herokuapp.com', '.ngrok.io']
 # Application definition
