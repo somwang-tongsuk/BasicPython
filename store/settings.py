@@ -26,24 +26,12 @@ SECRET_KEY = '#!$^--+rsa2c!l0p=x(mbslzcx@tr*#r1+-i$ub$1ju+bd(lf8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+TEMPLATE_DEBUG = DEBUG
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console'],
-             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
-        },
-    },
-}
-
-ALLOWED_HOSTS = ['.herokuapp.com, 127.0.0.1']
+ALLOWED_HOSTS = [
+    'localhost',
+    '.herokuapp.com'
+]
 
 
 # Application definition
